@@ -1,0 +1,14 @@
+li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+li button{
+    margin-left: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
