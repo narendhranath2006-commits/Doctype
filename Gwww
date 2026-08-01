@@ -1,0 +1,9 @@
+<h2>Add Workout</h2>
+
+<input type="text" placeholder="Workout Name">
+
+<input type="number" placeholder="Duration">
+
+<input type="number" placeholder="Calories">
+
+<button>Add Workout</button>
