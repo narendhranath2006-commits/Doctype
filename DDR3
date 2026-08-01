@@ -1,0 +1,15 @@
+let steps = Number(localStorage.getItem("steps")) || 0;
+
+document.getElementById("stepCount").innerText = steps + " Steps";
+
+function addSteps() {
+
+    steps += 1000;
+
+    document.getElementById("stepCount").innerText =
+        steps + " Steps";
+
+    localStorage.setItem("steps", steps);
+
+    updateGoal();
+}
