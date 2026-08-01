@@ -1,0 +1,23 @@
+<main>
+
+<div class="card">
+    <h2>Steps</h2>
+    <p>8500</p>
+</div>
+
+<div class="card">
+    <h2>Calories</h2>
+    <p>1200</p>
+</div>
+
+<div class="card">
+    <h2>Duration</h2>
+    <p>90 Min</p>
+</div>
+
+<div class="card">
+    <h2>Goal</h2>
+    <p>75%</p>
+</div>
+
+</main>
