@@ -1,0 +1,4 @@
+<div class="card">
+    <h2>Workout Progress</h2>
+    <canvas id="workoutChart"></canvas>
+</div>
