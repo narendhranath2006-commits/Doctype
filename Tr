@@ -1,0 +1,7 @@
+function weeklyProgress() {
+
+    let total = workoutList.length;
+
+    document.getElementById("weeklyWorkout").innerText =
+        total + " Workouts Completed";
+}
