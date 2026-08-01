@@ -1,0 +1,8 @@
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+}
