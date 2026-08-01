@@ -1,0 +1,5 @@
+<input
+    type="text"
+    id="searchWorkout"
+    placeholder="Search Workout"
+    onkeyup="searchWorkout()">
