@@ -1,0 +1,1 @@
+li.innerHTML = `${workout} - ${duration} min - ${calories} calories`;
