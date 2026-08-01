@@ -1,0 +1,7 @@
+<div class="card">
+    <h2>Daily Steps</h2>
+
+    <p id="stepCount">0 Steps</p>
+
+    <button onclick="addSteps()">+1000 Steps</button>
+</div>
