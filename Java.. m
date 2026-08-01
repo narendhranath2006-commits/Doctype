@@ -1,0 +1,13 @@
+function searchWorkout() {
+    let input = document.getElementById("searchWorkout").value.toLowerCase();
+
+    let items = document.querySelectorAll("#workoutList li");
+
+    items.forEach(item => {
+        if (item.textContent.toLowerCase().includes(input)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
