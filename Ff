@@ -1,0 +1,9 @@
+<div class="card">
+    <h2>Total Calories</h2>
+    <p id="totalCalories">0</p>
+</div>
+
+<div class="card">
+    <h2>Total Duration</h2>
+    <p id="totalDuration">0 Min</p>
+</div>
