@@ -1,0 +1,9 @@
+<div class="card">
+    <h2>User Profile</h2>
+
+    <input type="text" id="username" placeholder="Enter Name">
+
+    <button onclick="saveProfile()">Save</button>
+
+    <h3 id="welcomeUser"></h3>
+</div>
