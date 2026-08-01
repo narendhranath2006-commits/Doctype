@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Tracker Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Fitness Tracker Dashboard</h1>
+
+    <div class="dashboard">
+
+        <!-- Left -->
+        <div class="left">
+
+            <div class="card">
+                <h2>Add Workout</h2>
+
+                <input type="text" placeholder="Workout Name">
+
+                <input type="number" placeholder="Duration (Minutes)">
+
+                <input type="number" placeholder="Calories Burned">
+
+                <button>Add Workout</button>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Workout Progress</h2>
+
+                <progress value="75" max="100"></progress>
+
+                <p>75% Completed</p>
+
+            </div>
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="right">
+
+            <div class="card">
+
+                <h2>Workout List</h2>
+
+                <ul id="workoutList">
+
+                    <li>Running - 30 mins - 250 Cal</li>
+
+                    <li>Cycling - 45 mins - 350 Cal</li>
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Fitness Stats</h2>
+
+                <p>👣 Steps : 8500</p>
+
+                <p>🔥 Calories : 1200</p>
+
+                <p>⏱ Active Minutes : 90</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Progress Chart</h2>
+
+                <canvas id="myChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
