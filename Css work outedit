@@ -1,0 +1,17 @@
+li button{
+    margin:5px;
+    padding:6px 12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+li button:first-of-type{
+    background:orange;
+    color:white;
+}
+
+li button:last-of-type{
+    background:red;
+    color:white;
+}
