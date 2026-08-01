@@ -1,0 +1,12 @@
+function updateDashboard() {
+    let totalCalories = 0;
+    let totalDuration = 0;
+
+    workoutList.forEach(item => {
+        totalCalories += Number(item.calories);
+        totalDuration += Number(item.duration);
+    });
+
+    document.getElementById("totalCalories").innerText = totalCalories;
+    document.getElementById("totalDuration").innerText = totalDuration + " Min";
+}
