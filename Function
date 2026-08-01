@@ -1,0 +1,17 @@
+function filterWorkout() {
+
+    let filter = document.getElementById("filterWorkout").value;
+
+    let items = document.querySelectorAll("#workoutList li");
+
+    items.forEach(item => {
+
+        if (filter === "All" || item.textContent.includes(filter)) {
+            item.style.display = "list-item";
+        } else {
+            item.style.display = "none";
+        }
+
+    });
+
+}
