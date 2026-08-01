@@ -1,0 +1,18 @@
+function displayWorkouts() {
+    let list = document.getElementById("workoutList");
+    list.innerHTML = "";
+
+    workoutList.forEach((item, index) => {
+        let li = document.createElement("li");
+
+        li.innerHTML = `
+            ${item.workout} - ${item.duration} Min - ${item.calories} Calories
+            <button onclick="editWorkout(${index})">Edit</button>
+            <button onclick="deleteWorkout(${index})">Delete</button>
+        `;
+
+        list.appendChild(li);
+    });
+
+    updateDashboard();   // 👈 Indha line function-oda last-la add pannanum
+}
