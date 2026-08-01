@@ -1,0 +1,7 @@
+<select id="filterWorkout" onchange="filterWorkout()">
+    <option value="All">All</option>
+    <option value="Running">Running</option>
+    <option value="Walking">Walking</option>
+    <option value="Cycling">Cycling</option>
+    <option value="Gym">Gym</option>
+</select>
