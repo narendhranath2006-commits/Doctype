@@ -1,0 +1,19 @@
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .card{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark-mode input{
+    background:#2a2a2a;
+    color:white;
+    border:1px solid #555;
+}
+
+.dark-mode button{
+    background:#444;
+}
