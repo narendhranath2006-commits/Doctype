@@ -1,0 +1,14 @@
+let water = Number(localStorage.getItem("water")) || 0;
+
+document.getElementById("waterCount").innerText =
+water + " Glass";
+
+function addWater() {
+
+    water++;
+
+    document.getElementById("waterCount").innerText =
+    water + " Glass";
+
+    localStorage.setItem("water", water);
+}
