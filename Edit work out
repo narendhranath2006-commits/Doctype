@@ -1,0 +1,19 @@
+function editWorkout(index) {
+
+    let workout = prompt("Enter Workout Name", workoutList[index].workout);
+    let duration = prompt("Enter Duration", workoutList[index].duration);
+    let calories = prompt("Enter Calories", workoutList[index].calories);
+
+    if (workout && duration && calories) {
+
+        workoutList[index] = {
+            workout,
+            duration,
+            calories
+        };
+
+        localStorage.setItem("workouts", JSON.stringify(workoutList));
+
+        displayWorkouts();
+    }
+}
