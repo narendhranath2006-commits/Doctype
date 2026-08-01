@@ -1,0 +1,7 @@
+<div class="card">
+    <h2>Weekly Progress</h2>
+
+    <p id="weeklyWorkout">0 Workouts</p>
+
+    <button onclick="weeklyProgress()">Update</button>
+</div>
