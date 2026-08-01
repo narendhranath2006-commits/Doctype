@@ -1,0 +1,14 @@
+function checkBadge() {
+
+    let badge = "No Badge";
+
+    if (workoutList.length >= 10) {
+        badge = "🏆 Fitness Champion";
+    } else if (workoutList.length >= 5) {
+        badge = "🥈 Active User";
+    } else if (workoutList.length >= 1) {
+        badge = "🥉 Beginner";
+    }
+
+    document.getElementById("badge").innerText = badge;
+}
