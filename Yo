@@ -1,0 +1,18 @@
+function downloadReport() {
+
+    let csv = "Workout,Duration,Calories,Date\n";
+
+    workoutList.forEach(item => {
+        csv += `${item.workout},${item.duration},${item.calories},${item.date}\n`;
+    });
+
+    let blob = new Blob([csv], { type: "text/csv" });
+
+    let link = document.createElement("a");
+
+    link.href = URL.createObjectURL(blob);
+
+    link.download = "Workout_Report.csv";
+
+    link.click();
+}
