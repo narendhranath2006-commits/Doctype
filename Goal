@@ -1,0 +1,14 @@
+function updateGoal() {
+
+    let goal = 10000;
+
+    let percent = (steps / goal) * 100;
+
+    if (percent > 100) {
+        percent = 100;
+    }
+
+    document.getElementById("goalProgress").value = percent;
+    document.getElementById("goalText").innerText =
+        Math.round(percent) + "% Completed";
+}
