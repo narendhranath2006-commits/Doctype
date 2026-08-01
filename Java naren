@@ -1,0 +1,7 @@
+function deleteWorkout(index) {
+    workoutList.splice(index, 1);
+
+    localStorage.setItem("workouts", JSON.stringify(workoutList));
+
+    displayWorkouts();
+}
