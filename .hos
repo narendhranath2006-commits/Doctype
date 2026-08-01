@@ -1,0 +1,15 @@
+function calculateBMI() {
+
+    let height = document.getElementById("height").value / 100;
+    let weight = document.getElementById("weight").value;
+
+    if (height === 0 || weight === "") {
+        alert("Enter Height and Weight");
+        return;
+    }
+
+    let bmi = weight / (height * height);
+
+    document.getElementById("bmiResult").innerHTML =
+        "BMI : " + bmi.toFixed(2);
+}
