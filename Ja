@@ -1,0 +1,13 @@
+.dashboard {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.left-panel {
+    width: 30%;
+}
+
+.right-panel {
+    width: 70%;
+}
