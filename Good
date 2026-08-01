@@ -1,0 +1,23 @@
+function addWorkout() {
+
+    let workout = document.getElementById("workout").value;
+    let duration = document.getElementById("duration").value;
+    let calories = document.getElementById("calories").value;
+
+    // 👇 Step 2 - Inga add pannanum
+    let date = document.getElementById("date").value;
+
+    // Validation...
+
+    // 👇 Step 3 - workoutList.push() ippadi maathanum
+    workoutList.push({
+        workout,
+        duration,
+        calories,
+        date
+    });
+
+    localStorage.setItem("workouts", JSON.stringify(workoutList));
+
+    displayWorkouts();
+}
