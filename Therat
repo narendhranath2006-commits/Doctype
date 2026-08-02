@@ -1,0 +1,96 @@
+// -------------------------
+// Dark Mode
+// -------------------------
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+window.onload = function () {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+
+    updateDashboard();
+};
+
+// -------------------------
+// Workout Data
+// -------------------------
+let workouts = JSON.parse(localStorage.getItem("workouts")) || [];
+
+// Add Workout
+function addWorkout() {
+    let name = document.getElementById("workoutName").value;
+    let duration = document.getElementById("duration").value;
+    let calories = document.getElementById("calories").value;
+
+    if (name === "" || duration === "" || calories === "") {
+        alert("Fill all fields");
+        return;
+    }
+
+    workouts.push({
+        name,
+        duration,
+        calories
+    });
+
+    localStorage.setItem("workouts", JSON.stringify(workouts));
+
+    updateDashboard();
+}
+
+// Dashboard Update
+function updateDashboard() {
+
+    document.getElementById("totalWorkouts").innerText = workouts.length;
+
+    let totalCalories = 0;
+
+    workouts.forEach(w => {
+        totalCalories += Number(w.calories);
+    });
+
+    let calorieBox = document.getElementById("totalCalories");
+
+    if (calorieBox) {
+        calorieBox.innerText = totalCalories;
+    }
+}
+
+// Search Workout
+function searchWorkout() {
+
+    let input = document
+        .getElementById("searchWorkout")
+        .value
+        .toLowerCase();
+
+    let result = workouts.filter(w =>
+        w.name.toLowerCase().includes(input)
+    );
+
+    console.log(result);
+}
+
+// BMI Calculator
+function calculateBMI() {
+
+    let weight = document.getElementById("weight").value;
+    let height = document.getElementById("height").value / 100;
+
+    if (weight === "" || height === "") {
+        return;
+    }
+
+    let bmi = weight / (height * height);
+
+    document.getElementById("bmi-result").innerHTML =
+        "Your BMI : " + bmi.toFixed(2);
+}
